@@ -1,0 +1,124 @@
+
+.active,.menu ul li:hover{
+	background:#000059;
+	border-radius:5px;
+}
+/*.active,.submenu ul li:hover{
+	background:#000059;
+	border-radius:5px;
+}*/
+.menu ul li a{
+	text-decoration:none;
+	color:white;
+}
+.menu ul li{
+	margin-top:-20px;
+	display: inline-block;
+	min-width:50px;
+}
+.menu{
+	background:blue;
+	font-size:30px;
+	text-align:center;
+	padding:1px;
+	}
+.submenu{
+	display:none;
+	position:relative;
+	background-color:white;
+	min-width:200px;
+	z-index:1;
+}
+.submenu ul li:hover{
+	display:block;
+	position:relative;
+	padding:5px;
+	}
+/*.submenu ul li a:hover{
+	display:block;
+	color:white;
+	background:red;
+	
+}*/
+.menu ul li:hover .submenu{
+	display:block;
+	position:absolute;
+	background:blue;
+	margin-top :2px;
+	}
+.menu ul li:hover .submenu ul li{
+	display:block;
+	margin:10px;
+}
+.contact{
+	display:none;
+	position:relative;
+	background-color:white;
+	min-width:200px;
+	/*z-index:1;*/
+}
+.menu ul li:hover .contact{
+	display:block;
+	position:absolute;
+	background:blue;
+	margin-top:5px;
+	padding:20px;
+}
+.cse{
+	float:right;
+	font-family:courier;
+	margin-right:300px;
+	font-size:90px;
+	color:red;
+}
+.cse a{
+	text-decoration:none;
+	margin-bottom:20px;
+}
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover;
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+footer {
+    text-align: center;
+    padding: 50px;
+}
+.con{
+	color:white;}
+.con a{
+	color:red;
+}
+/*blinking text for*/
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+.cse a{
+	 animation:blinkingText 10s infinite;
+}
+@keyframes blinkingText{
+	0%{color:#fff;}
+	20%{color:red;}
+    40%{    color:blue ; }
+    60%{    color:green; }
+    80%{    color:yellow;  }
+    100%{   color:transparent;}
+}
+@keyframes cse a{
+	0%{ color:white;}
+	20%{color:red;}
+    40%{    color:blue ; }
+    60%{    color:green; }
+    80%{    color:yellow;  }
+    100%{   color:transparent;}
+}
+
+
